@@ -16,6 +16,8 @@ public class Main {
             sv[i].hienthi();
         }
 
+        System.out.println("----------------------------------------------------------------------------------------------");
+
         //Cau 2:
         LopHoc[] lh = new LopHoc[2];
         for(int i=0; i<lh.length; i++){
