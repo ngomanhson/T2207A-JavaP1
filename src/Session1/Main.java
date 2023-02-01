@@ -1,4 +1,4 @@
-package section1;
+package Session1;
 
 import java.util.Scanner;
 
@@ -48,17 +48,44 @@ public class Main {
         //Nhap 1 so nguyen tu ban phim
         Scanner sc = new Scanner(System.in);
 
+//        System.out.println("Nhập vào 1 số tự nhiên: ");
+//        int n = sc.nextInt();
+//        System.out.println("Nhap 1 so thuc: ");
+//        double d = sc.nextDouble();
+//        sc.nextLine();
+//        System.out.println("Nhap 1 string(chuoi): ");
+//        String str = sc.nextLine();
+//        System.out.println("n: "+n);
+//        System.out.println(("d: "+d));
+//        System.out.println("str: "+str);
+
+
+        //Nhap 1 so nguyen tu ban phim,
+        //tinh tong S = 1 + 2 + 3 ... + n
+        int a=0;
+        System.out.println("Nhập 1 số nguyên: ");
         int n = sc.nextInt();
+        for(int i=1; i<=n; i++){
+            a+=i;
+        }
+        System.out.println("Tổng là: "+a);
 
-        System.out.println("Nhap 1 so thuc: ");
-        double d = sc.nextDouble();
-        sc.nextLine();
-        System.out.println("Nhap 1 string(chuoi): ");
-        String str = sc.nextLine();
-        System.out.println("n: "+n);
-        System.out.println(("d: "+d));
-        System.out.println("str: "+str);
-
+        //Kiem tra xem phai so nguyen to hay khong
+        int dem = 0;
+        System.out.println("Nhập vào số nguyên: ");
+        int snt = sc.nextInt();
+        for(int i=1; i<=snt; i++){
+            if(snt%i==0){
+                dem++;
+                System.out.println(snt+": chia hết cho "+i);
+            }
+        }
+        if(dem == 2){
+            System.out.println(snt+": là số nguyên tố ");
+        }else{
+            System.out.println(snt+": không phải số nguyên tố "
+            );
+        }
     }
 
     //Ham
